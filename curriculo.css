@@ -40,3 +40,12 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+
+.botao-home {
+    width: 80px;
+    height: auto;
+}
+.botao-home:hover{
+    transform: scale(1.3);
+}
+
