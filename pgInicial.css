@@ -20,8 +20,7 @@ list-style-type: none;
     background-color: darkgray;
     color: white;
     text-decoration: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 }
 .hero-content h1{
     color: #375;
@@ -58,8 +57,4 @@ list-style-type: none;
 }
 .card:hover{
     transform: scale(1.05);
-=======
->>>>>>> parent of 1bf2c36 (configurando site)
-=======
->>>>>>> parent of 1bf2c36 (configurando site)
 }
