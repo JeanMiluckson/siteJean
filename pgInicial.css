@@ -1,5 +1,12 @@
 body{
     background-color: rgb(234, 251, 255);
+    display: flex;
+    justify-content: center;
+}
+.pg0 {
+    max-width: 1200px;   /* largura máxima do site */
+    margin: 0 auto;      /* centraliza horizontalmente */
+    padding: 0 20px;     /* espaço lateral em telas pequenas */
 }
 .hero{
     text-align: center;
