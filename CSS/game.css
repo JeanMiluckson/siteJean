@@ -13,10 +13,33 @@ header{
     display: flex;
     justify-content: center;
 }
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav li{
+    list-style-type: none;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 10px;
+}
+nav a{
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: darkgray;
+    color: white;
+}
 main{
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-top: 50px;
 }
 #game-container {
     text-align: center;
@@ -38,15 +61,15 @@ main{
     color: #ccc; 
     position: relative; 
  }
-.correto { color: #27ae60; }
+.correto {
+     color: #27ae60; 
+}
 .errado { 
     color: #ffffff !important; 
     background-color: #ff4d4d !important; 
     border-radius: 4px;
     padding: 0 2px;
 }
-
-/* Indicador de onde o usuário está digitando */
 .atual { 
     border-bottom: 3px solid #3498db;
     color: #333; 
