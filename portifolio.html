@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="CSS/portifolio.css">
 </head>
 <body>
-    <h2>Aqui serão exibidos meus projetos</h2>
+
+    <!-- Cabeçalho com o título e menu estilo botão -->
+    <header class="header-container">
+        <h1 class="main-title">Portifólio</h1>
+        <nav class="nav-menu">
+            <a href="pgInicial.html" class="nav-btn-link">Inicio</a>
+            <a href="curriculo.html" class="nav-btn-link">Curriculo</a>
+        </nav>
+    </header>
+
+    <main class="portfolio-container">
+        
+        <!-- Seção 1: Imagens -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Images 1</h2>
+            
+            <div class="carousel-wrapper">
+                <button class="nav-btn prev" onclick="moveCarousel(this, -1)">❮</button>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="imagens/image1/Car.png" alt="Imagem do Carro">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image1/Piano1.png" alt="Imagem do Piano">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image1/TecImg.jpg" alt="Imagem do Teclado">
+                    </div>
+                </div>
+
+                <button class="nav-btn next" onclick="moveCarousel(this, 1)">❯</button>
+            </div>
+        </section>
+
+        <!-- Seção 2: Imagens -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Images 2</h2>
+            
+            <div class="carousel-wrapper">
+                <button class="nav-btn prev" onclick="moveCarousel(this, -1)">❮</button>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="imagens/image2/Hito.png" alt="Akuma no Mi Hito">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image2/Gomu.png" alt="Akuma no Mi Gomu">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image2/OPE.png" alt="Akuma no Mi Ope">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image2/FruitsOP.png" alt="Akuma no Mi FruitsOP">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image2/Fox.jpg" alt="Fox">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image2/Cogumelo.png" alt="Cogumelo">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image2/Led1.png" alt="Led1">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/image2/Led.png" alt="Led">
+                    </div>
+                </div>
+
+                <button class="nav-btn next" onclick="moveCarousel(this, 1)">❯</button>
+            </div>
+        </section>
+
+        <!-- Seção 3: Vídeos -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Animações</h2>
+            
+            <div class="carousel-wrapper">
+                <button class="nav-btn prev" onclick="moveCarousel(this, -1)">❮</button>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <video controls poster="imagens/image2/FirceImage.jpg">
+                            <source src="videos/firceAnim.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="card">
+                        <video controls poster="imagens/image2/FruitsFrontOP.png">
+                            <source src="videos/FruitsINS.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="card">
+                        <video controls poster="imagens/image2/Fox.jpg">
+                            <source src="videos/Fox.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="card">
+                        <video controls poster="imagens/image1/TecImg.jpg">
+                            <source src="videos/Teclado.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="card">
+                        <video controls poster="imagens/image2/Cogumelo.png">
+                            <source src="videos/cog.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+
+                <button class="nav-btn next" onclick="moveCarousel(this, 1)">❯</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="JavaScript/script.js"></script>
 </body>
 </html>
